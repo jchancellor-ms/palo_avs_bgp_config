@@ -20,8 +20,8 @@ Ensure you have `git`, `az cli`, and `terraform` applications installed and conf
 1. Clone the latest version of the repo's main branch. (`git clone https://github.com/jchancellor-ms/palo_avs_bgp_config.git`)
 1. Login to the azure cli and set the subscription context to your target subscription (`az login`)
 1. Set the terraform ARM subscription is environment variable pointing to your subscription id
-    1. Windows - **set ARM_SUBSCRIPTION_ID=<subscription id value>** (example `set ARM_SUBSCRIPTION_ID=000000000-0000-0000-0000-000000000000`)
-    1. Linux - **export ARM_SUBSCRIPTION_ID=<subscription id value>** (example `export ARM_SUBSCRIPTION_ID=000000000-0000-0000-0000-000000000000`)
+    1. Windows - **set ARM_SUBSCRIPTION_ID=subscription id value** (example `set ARM_SUBSCRIPTION_ID=000000000-0000-0000-0000-000000000000`)
+    1. Linux - **export ARM_SUBSCRIPTION_ID=subscription id value** (example `export ARM_SUBSCRIPTION_ID=000000000-0000-0000-0000-000000000000`)
 
 ### Deploy the Azure Infrastructure components
 
@@ -47,7 +47,7 @@ Once the Azure infrastructure installation completes it will write out a number 
 
 1. Change directory to the Palo root module directory.  `cd ../palo_config_root`
 1. Return to visual studio code and open the `example.auto.tfvars.sample` file in the `palo_config_root` directory
-1. Update the values in the file with the output values from the Azure Infrastructure deployment and save the updated file as `example.auto.tfvars`.
+1. Update the values in the file with the **output values** from the Azure Infrastructure deployment in the previous step and save the updated file as `example.auto.tfvars`.
 1. Run `terraform init` on your command prompt to initialize the deployment providers.
 1. Run `terraform apply` to initiate the deployment.  
 1. Type `yes` to allow the deployment to continue.
@@ -60,7 +60,7 @@ The Panos terraform provider doesn't currently provide a mechanism to commit cha
 
 1. Log into the Azure portal and find the newly created resource group
 1. Locate the management public IP address for the first firewall.
-1. Open a browser tab and enter https://<public ip address from the previous step>
+1. Open a browser tab and enter https://**public ip address** from the previous step
 1. Accept the risk of the self-signed certificates on the Palo
 1. Enter the username that was included in the .tfvars files.  This defaults to azureuser if you didn't change it.
 1. Return to the portal and locate the keyvault resource that was deployed.
