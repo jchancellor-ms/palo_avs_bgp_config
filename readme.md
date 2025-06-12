@@ -76,3 +76,8 @@ The Panos terraform provider doesn't currently provide a mechanism to commit cha
 This set of scripts does not include an AVS deployment as part of the configuration. They also don't automatically create an ExpressRoute connection to the AVS environment.  If you want to attach an AVS environment, you can do so by generating an ExpressRoute key and configuring an expressRoute connection to the Virtual Network Gateway deployed as part of this Terraform configuration.
 
 > Note: This deployment includes a jump virtual machine and a Bastion environment to allow for testing and AVS management. To access the jump host, login using Bastion. The username will be the same as what was used to configure the Palo Alto firewalls, and there is a separate password stored as a secret in the key vault.
+
+
+## Decommisioning your infrastructure
+
+Once you are done testing you can remove the deployed infrastructure by going to the `azure_infrastructure_root` directory and issuing a `terraform destroy` command.
