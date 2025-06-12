@@ -10,7 +10,7 @@ terraform {
     }
     panos = {
       source = "PaloAltoNetworks/panos"
-      version = "~>2.0"
+      version = "=2.0.2"
     }
   }
 }
