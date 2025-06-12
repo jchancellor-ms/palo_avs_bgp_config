@@ -1,0 +1,11 @@
+create_resource_group        = true #set this to false if you want to use an existing resource group. (may be required if you need to set policy exclusions for public IPs)
+resource_group_name          = "sample-rg-name"
+location                     = "westus3"
+firewall_vnet_address_space  = "10.100.0.0/24"
+address_space_hub_vnet       = "10.50.0.0/20"
+address_space_bastion_vnet   = "10.60.0.0/20"
+name_prefix                  = "prod"
+palo_image_version           = "11.2.5"
+vm_sku                       = "Standard_DS3_v2"
+admin_username               = "azureuser"
+firewall_asn                 = 65001

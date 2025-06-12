@@ -1,0 +1,7 @@
+resource_group_name          = "sample-rg-name"
+admin_username               = "azureuser"
+name_prefix                  = "prod"
+ars_ip_address_1             = "10.50.2.4"
+ars_ip_address_2             = "10.50.2.5"
+firewall_vnet_address_space  = "10.100.0.0/24"
+key_vault_resource_id        = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/sample-rg-name/providers/Microsoft.KeyVault/vaults/sample-vault-name"
