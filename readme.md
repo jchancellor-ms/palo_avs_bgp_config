@@ -17,7 +17,7 @@ Ensure you have `git`, `az cli`, and `terraform` applications installed and conf
 ### Get the code and setup the environment
 
 1. Create a working directory for the code. (**mkdir working_dir**)
-1. Clone the latest version of the repo's main branch. (`git clone <TODO: add repo details here>`)
+1. Clone the latest version of the repo's main branch. (`git clone https://github.com/jchancellor-ms/palo_avs_bgp_config.git`)
 1. Login to the azure cli and set the subscription context to your target subscription (`az login`)
 1. Set the terraform ARM subscription is environment variable pointing to your subscription id
     1. Windows - **set ARM_SUBSCRIPTION_ID=<subscription id value>** (example `set ARM_SUBSCRIPTION_ID=000000000-0000-0000-0000-000000000000`)
